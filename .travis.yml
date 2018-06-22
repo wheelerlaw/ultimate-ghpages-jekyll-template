@@ -20,8 +20,6 @@ deploy:
   on:
     branch:
     - develop
-envgs:
-  secure: wYTu9j75SxQvExNAoTEuBnTN1lNatp+c5jJWMYceaxAeNsCzjo2MdbB9ZqWX/7UazOZDXuaJ9hBaajUxCsNLIMISfP3/z2rTZeU1RuW1gg/eZwVUm+iJgRQ/zmjh4AZlT+1xb1k52j7KKR7SKM8Bo4FEmNjXHCuRmncyCQ+7Do3gr+1TCHBq9NZYHh8E7yQ/g/0ymxRvLaBX36KgW86qAWfpgOPFlUeLyiaRZKW1Bga1whrtTmWBR+7GxXHQaM8LsRrv1EYufCaIkbchRzitRWnZdL3Bt+UJDAm8YPEyniGOM1PvoIur+Eh5XYSs0DMCzm694THDvxEh3MolbL7ePyJ5+p9JPtLUR5w7ZrvYJpvsVTZdBmOUGFsGuzyGPbUtPwZpPm7WSsq473MvfySOnWIJV9LPoaqkyTvkxYCdBIjnSZ6F/pXhxDrA8P4j25RszuVvQ6EdgucFZx/bSpsRwJYRkLfxVcWgqmj0Sp8LkmddDTbynZPl42wyjh+usPPOwskV8NOe8GkF50x2talo/V60yBeYrkvIU2JIQ/WiUYalAEVdJDQ5Mja8WMsRIW2L6j5qFnoZv5A9dDqEBcwl9g/6Id09ebhIC8cbFIBe5/gnE1/plZxsO3ayos5S+BomLLGtJcjlZee7gqRWPH92BkcU1c5hTd44uiHZwdnJ4zQ=
 # Uncomment the following section if you would want to enable Slack notifications on successful builds:
 #notifications:
 #  email: false
