@@ -1,16 +1,31 @@
 # ultimate-ghpages-jekyll-template
 [![Build Status](https://travis-ci.com/wheelerlaw/ultimate-ghpages-jekyll-template.svg?branch=develop)](https://travis-ci.com/wheelerlaw/ultimate-ghpages-jekyll-template)
 
-The ultimate Jekyll template for use with Github pages and TravisCI
+### The ultimate Jekyll template for use with Github pages and TravisCI
 
 ## Getting Started
 
 To use this template, first fork this repo. 
 
+Then configure the default branch to be `develop` (if you haven't already done so):
+![](local/default-branch.png)
+
 Next, configure the repo settings to use Github pages like so:
+![](local/gh-pages.png)
 
+Currently this template only supports setting the `master` branch as the Github Pages source. 
 
-## Using The Template
+Next, navigate to the page for the repo (in this repo's case, [wheelerlaw.github.io/ultimate-ghpages-jekyll-template](http://wheelerlaw.github.io/ultimate-ghpages-jekyll-template)):
+![](local/result.png)
+
+## Build System
+
+This template comes with a pre-configured `.travis.yml` ready for easy continuous deployment of your website. All you need to do is add your Github API token to the `env` section of the repo's `.travis.yml` with the following command:
+
+    travis encrypt --pro GITHUB_TOKEN=<your_github_api_token> --add env
+    
+
+## Using The Template Locally
 
 Installing depdencies:
 ```sh
@@ -30,8 +45,9 @@ jekyll serve
 
 https://github.io/wheelerlaw/ultimate-ghpages-jekyll-template
 
-## Contributing
-This repository utilizes a pretty regimented development workflow to facilitate easy website deployment. 
+## Contributing To Your Website
+
+This template uses a simple multi-branch deployment model to separate the deployed code on the `master` branch from the trunk development branch, `develop`. 
 
 Notable branches:
  - `develop`: This is the "master" branch of the repo, if you will. When you are starting a new feature, branch from here. This is also the branch against which you will create pull requests. Furthermore, Travis listens for changes on this branch to deploy to `master`.
@@ -75,6 +91,6 @@ git push -u
 ```
 Note: `-u` is only needed on the `git push` if the branch does not exist in `origin` (the repo in Github). 
 
-Now, go to Github and create a pull request against `develop`. Get an admin for the repository ([@wheelerlaw](https://github.com/wheelerlaw)) to sign off on your changes and merge the PR into `develop`. 
+Now, go to Github and create a pull request against `develop`. Get an admin for your repository to sign off on your changes and merge the PR into `develop`. 
 
 Wait a few minutes and your changes will show up on the site. You might need to clear your browser cache. 

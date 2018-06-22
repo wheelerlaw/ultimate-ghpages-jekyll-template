@@ -20,6 +20,7 @@ exclude:
  - scripts
  - .travis.yml
  - Rakefile
+ - local
 
 collections:
   projects:
