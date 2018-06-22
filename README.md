@@ -43,8 +43,6 @@ You can alternatively use jekyll to serve the site locally without having to pus
 jekyll serve
 ```
 
-https://github.io/wheelerlaw/ultimate-ghpages-jekyll-template
-
 ## Contributing To Your Website
 
 This template uses a simple multi-branch deployment model to separate the deployed code on the `master` branch from the trunk development branch, `develop`. 
